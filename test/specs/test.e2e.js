@@ -88,9 +88,9 @@ describe('Swag Labs', () => {
         await browser.pause(1000)
         const title = await $('.title').getText()
         assert.strictEqual(title, "Checkout: Your Information")
-        await $('#first-name').setValue('First')
-        await $('#last-name').setValue('Last')
-        await $('#postal-code').setValue('234567')
+        await $('#first-name').setValue('Umi')
+        await $('#last-name').setValue('Dewi')
+        await $('#postal-code').setValue('29876')
         await $('#continue').click()
     });
 
